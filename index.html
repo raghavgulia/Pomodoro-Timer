@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.min.css" />
+    <script src="script.min.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="time"><h1 class="timer"></h1></div>
+
+      <div class="buttons">
+        <button class="btn btnPause">| |</button>
+        <button class="btn setting">Settings</button>
+        <button class="btn btnNext">Next</button>
+        <button class="btn btnReset">Reset</button>
+      </div>
+      <div class="pop hidden">
+        <button class="cross">Cross</button>
+        <div class="short">
+          <div class="textContainer"><p class="text">Short Break</p></div>
+          <input type="number" name="" id="inp" class="short-m" />
+          <input type="number" name="" id="inp" class="short-s" />
+        </div>
+        <div class="long">
+          <div class="textContainer">
+            <p class="text">Long Break</p>
+          </div>
+
+          <input type="number" name="" id="inp" class="long-m" />
+          <input type="number" name="" id="inp" class="long-s" />
+        </div>
+        <button class="btn ok">Ok</button>
+
+        <input type="text" id="short" value="02:00" class="hidden" />
+        <input type="text" id="long" value="05:00" class="hidden" />
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>
